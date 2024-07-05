@@ -1,0 +1,80 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+    
+.switch{
+background-color: darkblue;
+border-left: solid black 5px;
+color: white;
+padding: 20px 9px;
+font-size: 14px;
+font-family: monospace;
+font-style: normal;
+}
+
+.back{
+background-color: darkblue;
+border-right: solid black 5px;
+color: white;
+padding: 20px 30px;
+font-size: 16px;
+font-family: monospace;
+font-style: normal;
+}
+    
+.light{
+background-image: url(../sunrise-desktop-fy4w166t95umeilj.jpg);
+}
+    
+.dark{
+background-image: url(../oakImage-1603985177355-superJumbo.jpg);
+}
+    
+.container{
+height: 100vh;
+display: grid;
+grid-template-areas: 
+'Navbar Navbar Navbar'
+'box1 box1 box1'
+'footer footer footer';
+text-align: center;
+font-size: 2rem;
+grid-template-columns: 1.8fr 2fr;
+grid-template-rows: 1.8fr 18.5fr 1.8fr;
+border: solid black;
+}
+    
+nav{
+grid-area: Navbar;
+text-align: start;
+font-family: monospace;
+border: solid black;
+display: flex;
+justify-content: space-between;
+flex-direction: row-reverse;
+}
+    
+   
+.box1{
+display: flex;
+grid-area: box1;
+display: flex;
+justify-content: center;
+}
+    
+
+footer {
+grid-area: footer;
+}
+
+.bpost {
+align-self: center;
+border: groove black;
+background-color: lightblue;
+height: 100%;
+width: 50%;
+word-wrap: break-word;
+}

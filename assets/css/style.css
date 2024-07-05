@@ -1,0 +1,97 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+.switch{
+background-color: darkblue;
+border-left: solid black 5px;
+color: white;
+padding: 20px 9px;
+font-size: 14px;
+font-family: monospace;
+font-style: normal;
+}
+
+fieldset{
+margin:2em 0;
+padding: 1em 2em;
+border: solid 1px lightblue;
+min-width: 200px;
+}
+
+label{
+display: block;
+margin-top: 1em;
+font-family: monospace;
+}
+
+label:first-of-type{
+margin-top: 0;
+}
+
+.light{
+background-color: white;
+}
+
+.dark{
+background-color: darkblue;
+}
+
+.container{
+height: 100vh;
+display: grid;
+grid-template-areas: 
+'Navbar Navbar Navbar'
+'box1 box2 box2'
+'footer footer footer';
+text-align: center;
+font-size: 2rem;
+grid-template-columns: 1.8fr 2fr;
+grid-template-rows: 1.8fr 18.5fr 1.8fr;
+border: solid black;
+}
+
+nav{
+grid-area: Navbar;
+text-align: start;
+font-family: monospace;
+border: solid black;
+display: flex;
+justify-content: space-between;
+flex-direction: row-reverse;
+}
+
+.box1{
+grid-area: box1;
+background-image:url(../Orb.png);
+border: solid black;
+}
+
+.box2{
+grid-area: box2;
+background-color: lightblue;
+border: solid black;
+}
+
+footer {
+grid-area: footer;
+border: solid black;
+}
+
+a:visited{
+text-decoration: none;
+color: black;
+}
+
+.Subbtn{
+    background-color: #8eaac0;;
+    border: solid black;
+    color: black;
+    padding: 20px 9px;
+    font-size: 14px;
+    font-family: monospace;
+    font-style: normal;   
+}
